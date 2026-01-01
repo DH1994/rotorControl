@@ -135,7 +135,6 @@ void loop() {
   if (currentLine.length()) {
     handleCmd(currentLine);
     Serial.println(currentLine);
-    currentLine = "";
   }
 
   if (stepper.distanceToGo()) {
